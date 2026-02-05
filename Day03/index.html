@@ -3,64 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Potfolio</title>
-    <link rel="icon" href="./my_selfie_image.jpg"></head>
-    <style>
-        html{
-            scroll-behavior: smooth;
-        }
-    </style>
-</head>
-</img>
-    <body>
-    <h1>Keerthana HR - Full Stack Developer</h1>
-    <p> Welcome to my portfolio website! use the navigation below to explore:</p>
-    <ul>
-        <li><a href="#aboutme">About Me </a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href ="#contact">Contact</a></li>
-        <li><a href="#download-resume">Download Resume</a></li>
-    </ul>
-<!-----------------------------------  -->
-    <h2 id="aboutme"> About Me</h2>
-    <p> I am a passionate full stack developer with expertise in both frontend and backend technologies. My journey in web development began with a curiosity for creating interactive user experiences and has evolved into a deep understanding of modern frameworks and tools.</p>
-
-    <h3><a href="https://github.com/KeerthanaHR" target="_blank"> Visit My Github</a></h3>
-
-
-    <!-----------------------  -->
-    <h3 id="skill"> Skils</h3>
-    <ul>
-        <li>HTML,CSS,JavaScript</li>
-        <li>Core Java,JDBC,JEE,Spring,Hibernate</li>
-        <li>MongoDB,SQL</li>
-    </ul>
-    <!-- -------------------------- -->
-    <h3 id="projects"> Projects</h3>
-    <ul>    
-        <li> Project 1: E-commerce Website - Developed a full-featured e-commerce platform using React for the frontend and Node.js with Express for the backend. Implemented user authentication, product management, and payment integration.</li>
-        <li> Project 2: Social Media App - Created a social media application with real-time chat functionality using Socket.io. Utilized MongoDB for data storage and implemented RESTful APIs for user interactions.</li> 
-       
-    </ul>
-<!-- --------------------------------- -->
-    <h3 id="contact"> Contact</h3>
-    <ul> 
-        <li type="square"><a href="mailto:keerthikeerthi81056@gmail.com">Email: keerthikeerthi81056@gmail.com</a></li>
-        <li type="square"><a href="tel:9876543210">Phone: 9876543210</a></li>
-    </ul>
-    <!-- ------------------------------- -->
-    <a href="./Keerthana HR CV.pdf" download><h3 id="download-resume">Download Resume</h3></a>
-
-
-    <h4> Contact me via:</h4>
-    <a href="https://www.linkedin.com/in/keerthana-h-r-166218337/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670129.png" alt="image not found" width="30" height="30"></img></a>
-    <a href="https://github.com/KeerthanaHR" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="image not found" width="30" height="30"></a>
-    <a href="https://www.instagram.com/k_e_e_r_t_h_i._24/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/15707/15707749.png" alt="image not found" width="30" height="30"></a></a>
-    
-    <p>
-        Back to Top<a href=" "><img src="https://cdn-icons-png.flaticon.com/128/5610/5610930.png" alt="image not found" width="20" height="20"></a>
-    </p>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/.Day03/styles.css">
+</head>                     
+<body> 
+    <header id="top">
+      <h1>Keerthana HR - Full Stack Developer</h1>
+      <p>Welcome to my portfolio website! Use the navigation below to explore:</p>
+      <nav class="nav_bar">
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href ="#contact">Contact</a></li>
+            <li><a href="#download-resume">Download Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+<main>
+    <section id="aboutme" aria-labelledby="aboutme-heading">
+      <h2 id="aboutme-heading">About Me</h2>
+      <p>I am a passionate full stack developer with expertise in both frontend and backend technologies. My journey in web development began with a curiosity for creating interactive user experiences and has evolved into a deep understanding of modern frameworks and tools.</p>
+      <p><a href="https://github.com/KeerthanaHR" target="_blank" rel="noopener">Visit My Github</a></p>
+    </section>
+    <hr>
+    <section id="skill">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Core Java, JDBC, JEE, Spring, Hibernate</li>
+        <li>MongoDB, SQL</li>
+      </ul>
+    </section>
+    <hr>
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <h3>Project 1: E-commerce Website</h3>
+        <p>Developed a full-featured e-commerce platform using React for the frontend and Node.js with Express for the backend. Implemented user authentication, product management, and payment integration.</p>
+      </article>
+      <article>
+        <h3>Project 2: Social Media App</h3>
+        <p>Created a social media application with real-time chat functionality using Socket.io. Utilized MongoDB for data storage and implemented RESTful APIs for user interactions.</p>
+      </article>
+    </section>
+    <hr>
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:keerthikeerthi81056@gmail.com">keerthikeerthi81056@gmail.com</a></li>
+        <li><a href="tel:9876543210">+91 9876543210</a></li>
+      </ul>
+      <p><a id="download-resume" href="./Keerthana HR CV.pdf" download>Download Resume</a></p>
+    </section>
+    <hr>
+    <section aria-label="Social links">
+      <h3>Contact me via:</h3>
+      <p class="social">
+        <a href="https://www.linkedin.com/in/keerthana-h-r-166218337/" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670129.png" alt="LinkedIn" width="30" height="30"></a>
+        <a href="https://github.com/KeerthanaHR" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="GitHub" width="30" height="30"></a>
+        <a href="https://www.instagram.com/k_e_e_r_t_h_i._24/" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/128/15707/15707749.png" alt="Instagram" width="30" height="30"></a>
+      </p>
+    </section>
+    </main>
+    <hr>
+    <footer>
+      <p><a href="#top">Back to Top <img src="https://cdn-icons-png.flaticon.com/128/5610/5610930.png" alt="Back to top" width="20" height="20"></a></p>
+    </footer>
     
     </body>
 </html>

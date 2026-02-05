@@ -6,45 +6,90 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Course Registration Form</h1>
+    <fieldset>
+    <legend>Personal Information</legend>
+    
+    <table>
+            <tr>
+        <td><label for="name">First Name</label></td>
+        <td><input type="text" required  placeholder="Ex:Harshit"><br></td>
+            </tr>
 
-    < action="">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name"> </input>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email"> </input>
-            <br>
-            <label for="password">Password</label>
-            <input type ="password" id="password" name="password" placeholder="Enter your password"> </input>
-            <br>
-
-            <input type="submit" value="Submit"></input>
-
-
-
-
-
-
-
-
-
+        <tr><td><label for="">Surname</label></td><td><input  type="text" placeholder="Ex:T"><br></td></tr>
+        <tr><td><label for="">Mobile number</label></td><td><input required type="tel" placeholder="Ex:987-897-0987"><br></td></tr>
+        <tr><td><label for="">Email</label></td><td><input type="email" required placeholder="Ex:Harshit@gmail.com"><br></td></tr>
+        <tr><td><label for="">Password</label></td><td><input type="password" required placeholder="min 8 characters"><br></td></tr>
+        <tr><td><label for="">Confirm Password</label></td><td><input type="password"  required placeholder="min 8 characters"><br></td></tr>
+        <tr><td><label for="">DOB</label></td><td><input  required  type="date"><br></td></tr>
+        <tr><td><label for="">AGE</label></td><td><input type="number" required  placeholder=""><br></td></tr>
+        <tr><td><label for="gender">Gender</label></td><td><input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female <input type="radio" name="gender" value="other"> Others<br></td></tr>
+       
+         
 
 
+<!-- Country -->
+ <tr>
+  <td><label for="country">Country:</label></td>
+  <td><select id="country" name="country" required>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="Japan">Japan</option>
+   
+  </select><br></td></tr>
+
+  <!-- Upload Picture -->
+  <tr><td><label for="pic">Upload Picture:</label></td>
+  <td><input type="file" id="pic" name="pic" accept="image/*"><br></td></tr>
+
+  <!-- Buttons -->
+  <tr><td ><input type="reset" value="Reset"></td></tr>
+
+    </table>
+    </fieldset>
+<!-- ---------------------------------------------- -->
+<fieldset>
+    <legend>Course Details</legend>
+    <label for="course">Select Course</label><br>
+    <select name="course" id="course" required>
+        <option value="Python">Python Full Stack</option>   
+        <option value="Java">Java Full Stack</option>
+        <option value="JavaScript">JavaScript Full Stack</option>
+        <option value="DataScience">Data Science
+        </option> 
+
+    </select><br>
+
+    <label for="delivery">Delivery Mode:</label>
+    <input type="radio" name="delivery" value="online"> Online
+    <input type="radio" name="delivery" value="offline"> Offline</input><br><br>
+
+    <label for="institue">INSTITUTE NAME:</label>
+    <input type="text"  value="TAP ACADEMY" readonly    name="institue" id="institue">
+    <br><br>
+
+    <label for="level">Choose your present Coding knowledge level:</label>
+    <input type="range" id="level" name="level" min="0" max="10">
+    <br><br>
+
+    <label for="comments">Comments</label><br>
+    <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+
+
+</fieldset><br>
 
 
 
-
-
-
-
-
-
-
-
-
+    <input type="submit" value="Submit">
     </form>
 
-     
-    
+
+
+
+
+
+
+
+
 </body>
 </html>
