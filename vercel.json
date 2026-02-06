@@ -2,12 +2,8 @@
   "buildCommand": "echo 'Static files ready'",
   "outputDirectory": ".",
   "public": true,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -15,6 +11,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/html; charset=utf-8"
         }
       ]
     }
