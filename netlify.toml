@@ -1,0 +1,11 @@
+[build]
+  command = "echo 'Static site ready'"
+  publish = "FinalPro"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production]
+  publish = "FinalPro"
